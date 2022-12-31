@@ -22,8 +22,8 @@ public class Hook {
 	public void InicializarTest() {
 		System.out.println("***Before");
 		//baseUtil.setStepInfo("WebDriver");
-		baseUtil.setDriver(Configuracion.createChromeDriver());
-		//baseUtil.setDriver(Configuracion.createEdgeDriver());
+		//baseUtil.setDriver(Configuracion.createChromeDriver());
+		baseUtil.setDriver(Configuracion.createEdgeDriver());
 		baseUtil.setWait(new WebDriverWait(baseUtil.getDriver(), 10));
 		baseUtil.getDriver().manage().window().maximize();
 	}
